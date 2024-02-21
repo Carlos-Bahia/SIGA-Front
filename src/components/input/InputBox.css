@@ -1,0 +1,72 @@
+.inputbbox-input{
+    border-radius: 20px;
+    height: 6vh;
+    width: 90%;
+    background-color: lightgray;
+    border: none;
+    padding-left: 1.5vw;
+    outline: none;
+}
+
+.inputbbox-input::placeholder{
+    color: 9f9f9f;
+}
+
+.inputbox-component{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.inputbox-component-item{
+    flex: 1;
+    text-align: left;
+    width: 100%;
+}
+
+.inputbox-component-item:first-child{
+    margin-left: 20px;
+    margin-top: 0;
+}
+
+.password-recovey-button{
+    color: inherit;
+    text-decoration: none;
+    display: inline-block; 
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.password-recovey-container{
+    align-items: right;
+    text-align: right;
+    margin-right: 3vw;
+}
+
+@media screen and (max-width: 800px){
+    .inputbbox-input{
+        padding-left: 4vw;
+    }
+    .inputbox-component-item:first-child{
+        margin-left: 0;
+    }
+    .password-recovey-container{
+        margin-right: 6vw;
+    }
+}
+
+.inputbox-component-password-visibility{
+    text-align: left;
+    margin-left: 2vw;
+}
+
+.password-visibility{
+    cursor: pointer;
+    width: 0;
+    position: absolute;
+}
+
+.password-visibility{
+    color: 9f9f9f;
+}
+
